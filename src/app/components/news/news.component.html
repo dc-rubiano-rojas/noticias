@@ -1,0 +1,15 @@
+<div class="card mt-5 ml-5" *ngFor='let noticia of noticias'>
+    <img *ngIf="noticia.urlToImage" [src]="noticia.urlToImage" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">{{noticia.title}}</h5>
+        <p class="card-text">{{noticia.description}}</p>
+        <p class="card-text"><small class="text-muted">{{noticia.author}}</small></p>
+        <a (click)="enviarAFuente(noticia)" class="btn btn-primary">Read</a>
+
+    </div>
+</div>
+
+
+<div id="mas" class="m-5">
+    <button (click)='masNoticias()' type="button" class="btn btn-dark btn-lg">Read more</button>
+</div>

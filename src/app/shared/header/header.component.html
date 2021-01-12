@@ -1,0 +1,19 @@
+<nav class="navbar navbar-expand-lg" id="nave">
+
+    <a class="navbar-brand ml-4" routerLink="/">The Newpaper | World</a>
+
+</nav>
+
+
+<div class="navegacion">
+
+    <ul>
+        <li *ngFor="let categoria of categorias">
+            <a [routerLink]="['/categoria', categoria]" routerLinkActive="activo">{{categoria}}</a>
+        </li>
+        <li>
+            <a href="">Watch Later</a>
+        </li>
+    </ul>
+
+</div>

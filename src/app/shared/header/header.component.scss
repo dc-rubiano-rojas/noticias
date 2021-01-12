@@ -1,0 +1,42 @@
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.navegacion {
+    height: 45px;
+    background-color: #B80000;
+    margin-top: 1.2px;
+}
+
+.navegacion ul {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.navegacion ul li {
+    list-style: none;
+    line-height: 42px;
+    transition: all 50ms;
+}
+
+.navegacion ul li:hover {
+    border-bottom: 3px solid #fff;
+}
+
+.navegacion ul li a {
+    padding: 12px;
+}
+
+.activo {
+    border-bottom: 3px solid #fff;
+}
+
+
+/* 
+@media (max-width: 652px) {
+    .navegacion {
+        display: flex;
+        flex-flow: column wrap;
+    }
+} */

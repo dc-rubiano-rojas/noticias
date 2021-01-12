@@ -1,0 +1,8 @@
+<div class="card mt-5 ml-5">
+    <img *ngIf="noticia.urlToImage" [src]="noticia.urlToImage" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">{{noticia.titulo}}</h5>
+        <p class="card-text">{{noticia.content}}</p>
+        <!-- <p class="card-text"><small class="text-muted">{{noticia.author}}</small></p> -->
+    </div>
+</div>
